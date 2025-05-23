@@ -10,32 +10,32 @@
 </head>
 <body class="box-border bg-grey-200 m-0 p-0 ">
   <section class="h-screen w-screen bg-[url(../assets/circlee.png)] bg-contain bg-linear-to-r bg-no-repeat bg-right">
-    <nav class="fixed flex items-center justify-around z-100 right-0 left-0 top-0 bg-red-200 shadow-2xl">
+    <nav class="fixed flex items-center justify-around z-100 right-0 left-0 top-0 bg-black shadow-2xl">
       
       <div class="logo relative text-red-400 text-4xl my-3 mx-0 font-bold left-0 cursor-grab p-1">
         <h1>Sneaker<span class="text-red-500 underline">s</span></h1>
       </div>
 
       <ul class="flex text-black ">
-        <li><a href="#" class="hover:text-white transition-colors px-3">Home</a></li>
-        <li><a href="#" class="hover:text-white transition-colors px-3">Products</a></li> 
-        <li><a href="#" class="hover:text-white transition-colors px-3">About</a></li>
-        <li><a href="#" class="hover:text-white transition-colors px-3">Review</a></li>
-        <li><a href="#" class="hover:text-white transition-colors px-3">Services</a></li>
+        <li><a href="#" class="text-red-400 hover:text-black transition-colors px-3">Home</a></li>
+        <li><a href="#" class="text-red-400 hover:text-black transition-colors px-3">Products</a></li> 
+        <li><a href="#" class="text-red-400 hover:text-black transition-colors px-3">About</a></li>
+        <li><a href="#" class="text-red-400 hover:text-black  transition-colors px-3">Review</a></li>
+        <li><a href="#" class="text-red-400 hover:text-black  transition-colors px-3">Services</a></li>
       </ul>
 
       <div class="icons cursor-pointer mx-0 my-1 text-lg ">
-        <i class="fa-solid fa-heart hover:text-red-900 transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-110 p-1"></i>
-        <i class="fa-solid fa-cart-shopping hover:text-white transition-colors p-1"></i>
-        <i class="fa-solid fa-user hover:text-white transition-colors p-1"></i>
+        <i class="fa-solid fa-heart text-red-400 hover:text-red-900 transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-110 p-1"></i>
+        <i class="fa-solid fa-cart-shopping text-red-400 hover:text-white transition-colors p-1 "></i>
+        <i class="fa-solid fa-user text-red-400 hover:text-white transition-colors p-1"></i>
       </div>
     </nav>
 
 <div class="main flex  items-center justify-around h-screen" id="home">
   <div class="mainContent flex flex-row items-center justify-around   ">
     <div class="mainText text-left">
-      <h1 class="nike relative text-8xl top-11 left-30 text-red-500  ">NIKE</br><span class=" font-sans text-7xl">Collection</span></h1>
-      <p class="relative leading-relaxed text-justify top-20 left-30 w-160">
+      <h1 class="nike relative text-8xl top-11 left-10 text-red-500  ">NIKE</br><span class=" font-sans text-7xl">Collection</span></h1>
+      <p class="relative leading-relaxed text-justify top-20 left-10 w-160">
         TEXT. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt velit nam asperiores 
         id consectetur, veniam sed assumenda repellendus, fugiat voluptatem ipsum ea, perferendis adipisci porro placeat accusantium deserunt 
         exercitationem excepturi aut laborum? Libero sed tempore consectetur illum nulla asperiores sunt inventore
@@ -438,7 +438,7 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
             </div>
             <a href="" class="btn py-2 px-5 bg-red-500 text-white">Add to cart</a>
           </div>
@@ -574,7 +574,7 @@
 
 </section>
 
-  <!--ABOUT-->
+ <!--ABOUT-->
 
   <div class="about w-full h-screen py-9 px-0 mb-40" id="about">
       <h1 class="flex items-center justify-center text-6xl mt-5 uppercase">Web<span class="text-red-500 ml-4">About</span></h1>
@@ -622,43 +622,527 @@
 
 
     <!--REVIEW-->
-    <div class="review" id="Review" class="w-full h-screen pt-20">
-      <h1>Customer's<span>review</span></h1>
+    <div class="review" id="Review" class="flex  w-full h-screen pt-20">
+      <h1 class="flex items-center justify-center mb-8 text-6xl uppercase ">Customer's
+        <span class="ml-4 text-red-500">review</span>
+      </h1>
 
-      <div class="reviewBox">
-        <div class="reviewCard">
-          <div class="cardTop">
-            <div class="profile">
-              <div class="profileImage">
-                <img src="" alt="">
-              </div>
-
-              <div class="name">
-                <strong>Asher Queens</strong>
-
-                <div class="like">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
+      
+        <div class="reviewBox flex flex-wrap relative w-full items-center
+         justify-center top-2 my-0 mx-auto">
+          <div
+          class="reviewCard 
+          w-120
+          bg-red-200
+          py-5
+          px-6
+          rounded-xl
+          m-4
+          shadow-3xl
+          shadow-black
+          ">
+            <div
+            class="cardTop
+            flex
+            items-center
+            justify-between
+            ">
+              <div
+              class="profile
+              flex
+              items-center
+              ">
+                <div
+                 class="profileImage
+                 w-15
+                 h-15
+                 rounded-full
+                 overflow-hidden
+                 my-1 mx-0
+                 shadow-2xl
+                 shadow-black
+                 cursor-pointer
+                 transition
+                 ease-in-out
+                 delay-100
+                 duration-300
+                 hover:-translate-y-1
+                 hover:scale-125  ">
+                  <img src="../assets/RV1.jpg" alt="profile picture"
+                  class="w-full
+                  object-cover
+                  object-center
+                 ">
+                </div>
+                <div
+                class="name
+                ml-5
+                leading-6
+                ">
+                  <strong
+                   class="text-xl">
+                    Asher Queens
+                  </strong>
+                  <div
+                  class="like
+                  inline-block
+                  text-lg
+                  ">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
                 </div>
               </div>
-
             </div>
-
+            <div class="comment">
+              <p
+              class="text-justify
+              leading-6
+              mt-4">
+                text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa commodi iustaliquam,
+                fugit quas, repellendus enim magni, rem perferendis quia nobis fugiat quidem.Est recusanda
+                e aspernatur illum eum pariatureius libero tenetur.
+              </p>
+            </div>
+        
+          </div>
+          <div
+          class="reviewCard
+          w-120
+          bg-red-200
+          py-5
+          px-6
+          rounded-xl
+          m-4
+          shadow-3xl
+          shadow-black
+          ">
+            <div
+            class="cardTop
+            flex
+            items-center
+            justify-between
+            ">
+              <div
+              class="profile
+              flex
+              items-center
+              ">
+                <div
+                 class="profileImage
+                 w-15
+                 h-15
+                 rounded-full
+                 overflow-hidden
+                 my-1 mx-0
+                 shadow-2xl
+                 shadow-black
+                 cursor-pointer
+                 transition
+                 ease-in-out
+                 delay-100
+                 duration-300
+                 hover:-translate-y-1
+                 hover:scale-125  ">
+                  <img src="../assets/RV1.jpg" alt="profile picture"
+                  class="w-full
+                  object-cover
+                  object-center
+                 ">
+                </div>
+                <div
+                class="name
+                ml-5
+                leading-6
+                ">
+                  <strong
+                   class="text-xl">
+                    Asher Queens
+                  </strong>
+                  <div
+                  class="like
+                  inline-block
+                  text-lg
+                  ">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="comment">
+              <p
+              class="text-justify
+              leading-6
+              mt-4">
+                text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa commodi iustaliquam,
+                fugit quas, repellendus enim magni, rem perferendis quia nobis fugiat quidem.Est recusanda
+                e aspernatur illum eum pariatureius libero tenetur.
+              </p>
+            </div>
+        
           </div>
 
-          <div class="comment">
-            <p>
-              text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa commodi iustaliquam, 
-              fugit quas, repellendus enim magni, rem perferendis quia nobis fugiat quidem.Est recusanda
-              e aspernatur illum eum pariatureius libero tenetur.
-            </p>
+          <div
+          class="reviewCard
+          w-120
+          bg-red-200
+          py-5
+          px-6
+          rounded-xl
+          m-4
+          shadow-3xl
+          shadow-black
+          ">
+            <div
+            class="cardTop
+            flex
+            items-center
+            justify-between
+            ">
+              <div
+              class="profile
+              flex
+              items-center
+              ">
+                <div
+                 class="profileImage
+                 w-15
+                 h-15
+                 rounded-full
+                 overflow-hidden
+                 my-1 mx-0
+                 shadow-2xl
+                 shadow-black
+                 cursor-pointer
+                 transition
+                 ease-in-out
+                 delay-100
+                 duration-300
+                 hover:-translate-y-1
+                 hover:scale-125  ">
+                  <img src="../assets/RV1.jpg" alt="profile picture"
+                  class="w-full
+                  object-cover
+                  object-center
+                 ">
+                </div>
+                <div
+                class="name
+                ml-5
+                leading-6
+                ">
+                  <strong
+                   class="text-xl">
+                    Asher Queens
+                  </strong>
+                  <div
+                  class="like
+                  inline-block
+                  text-lg
+                  ">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="comment">
+              <p
+              class="text-justify
+              leading-6
+              mt-4">
+                text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa commodi iustaliquam,
+                fugit quas, repellendus enim magni, rem perferendis quia nobis fugiat quidem.Est recusanda
+                e aspernatur illum eum pariatureius libero tenetur.
+              </p>
+            </div>
+        
+          </div>
+
+
+          <div
+          class="reviewCard
+          w-120
+          bg-red-200
+          py-5
+          px-6
+          rounded-xl
+          m-4
+          shadow-3xl
+          shadow-black
+          ">
+            <div
+            class="cardTop
+            flex
+            items-center
+            justify-between
+            ">
+              <div
+              class="profile
+              flex
+              items-center
+              ">
+                <div
+                 class="profileImage
+                 w-15
+                 h-15
+                 rounded-full
+                 overflow-hidden
+                 my-1 mx-0
+                 shadow-2xl
+                 shadow-black
+                 cursor-pointer
+                 transition
+                 ease-in-out
+                 delay-100
+                 duration-300
+                 hover:-translate-y-1
+                 hover:scale-125  ">
+                  <img src="../assets/RV1.jpg" alt="profile picture"
+                  class="w-full
+                  object-cover
+                  object-center
+                 ">
+                </div>
+                <div
+                class="name
+                ml-5
+                leading-6
+                ">
+                  <strong
+                   class="text-xl">
+                    Asher Queens
+                  </strong>
+                  <div
+                  class="like
+                  inline-block
+                  text-lg
+                  ">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="comment">
+              <p
+              class="text-justify
+              leading-6
+              mt-4">
+                text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa commodi iustaliquam,
+                fugit quas, repellendus enim magni, rem perferendis quia nobis fugiat quidem.Est recusanda
+                e aspernatur illum eum pariatureius libero tenetur.
+              </p>
+            </div>
+        
+          </div>
+
+
+          <div
+          class="reviewCard
+          w-120
+          bg-red-200
+          py-5
+          px-6
+          rounded-xl
+          m-4
+          shadow-3xl
+          shadow-black
+          ">
+            <div
+            class="cardTop
+            flex
+            items-center
+            justify-between
+            ">
+              <div
+              class="profile
+              flex
+              items-center
+              ">
+                <div
+                 class="profileImage
+                 w-15
+                 h-15
+                 rounded-full
+                 overflow-hidden
+                 my-1 mx-0
+                 shadow-2xl
+                 shadow-black
+                 cursor-pointer
+                 transition
+                 ease-in-out
+                 delay-100
+                 duration-300
+                 hover:-translate-y-1
+                 hover:scale-125  ">
+                  <img src="../assets/RV1.jpg" alt="profile picture"
+                  class="w-full
+                  object-cover
+                  object-center
+                 ">
+                </div>
+                <div
+                class="name
+                ml-5
+                leading-6
+                ">
+                  <strong
+                   class="text-xl">
+                    Asher Queens
+                  </strong>
+                  <div
+                  class="like
+                  inline-block
+                  text-lg
+                  ">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="comment">
+              <p
+              class="text-justify
+              leading-6
+              mt-4">
+                text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa commodi iustaliquam,
+                fugit quas, repellendus enim magni, rem perferendis quia nobis fugiat quidem.Est recusanda
+                e aspernatur illum eum pariatureius libero tenetur.
+              </p>
+            </div>
+        
+          </div>
+
+          <div
+          class="reviewCard
+          w-120
+          bg-red-200
+          py-5
+          px-6
+          rounded-xl
+          m-4
+          shadow-3xl
+          shadow-black
+          ">
+            <div
+            class="cardTop
+            flex
+            items-center
+            justify-between
+            ">
+              <div
+              class="profile
+              flex
+              items-center
+              ">
+                <div
+                 class="profileImage
+                 w-15
+                 h-15
+                 rounded-full
+                 overflow-hidden
+                 my-1 mx-0
+                 shadow-2xl
+                 shadow-black
+                 cursor-pointer
+                 transition
+                 ease-in-out
+                 delay-100
+                 duration-300
+                 hover:-translate-y-1
+                 hover:scale-125  ">
+                  <img src="../assets/RV1.jpg" alt="profile picture"
+                  class="w-full
+                  object-cover
+                  object-center
+                 ">
+                </div>
+                <div
+                class="name
+                ml-5
+                leading-6
+                ">
+                  <strong
+                   class="text-xl">
+                    Asher Queens
+                  </strong>
+                  <div
+                  class="like
+                  inline-block
+                  text-lg
+                  ">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="comment">
+              <p
+              class="text-justify
+              leading-6
+              mt-4">
+                text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa commodi iustaliquam,
+                fugit quas, repellendus enim magni, rem perferendis quia nobis fugiat quidem.Est recusanda
+                e aspernatur illum eum pariatureius libero tenetur.
+              </p>
+            </div>
           </div>
 
         </div>
+    </div>
+    <!--SERVICES-->
+    <div class="services w-7/10 my-0 mx-auto text-center " id="services">
+      <h1>our<span>services</span></h1>
+
+      <div class="servicesCards">
+        <div class="serviceBox">
+          <i class="fa-solid fa-truck-fast"></i>
+          <h3>Fast Deliver</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, esse?
+          </p>
+        </div>
+
+        <div class="serviceBox">
+          <i class="fa-solid fa-rotate-left"></i>
+          <h3>10 Days replacement</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, esse?
+          </p>
+        </div>
+
+        <div class="serviceBox">
+          <i class="fa-solid fa-headset"></i>
+          <h3>24 x 7 Support</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, esse?
+          </p>
+        </div>
+
       </div>
+
     </div>
 </body>
 </html>
