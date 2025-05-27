@@ -2,3 +2,12 @@
 .nike{
     font-family: "pyxidium quick", cursive;
 }
+
+.well{
+    font-family: "prevattscriptssk";
+}
+
+::-webkit-input-placeholder{
+    color: black;
+    opacity: 0.7;
+}

@@ -34,7 +34,7 @@
 <div class="main flex  items-center justify-around h-screen" id="home">
   <div class="mainContent flex flex-row items-center justify-around   ">
     <div class="mainText text-left">
-      <h1 class="nike relative text-8xl top-11 left-10 text-red-500  ">NIKE</br><span class=" font-sans text-7xl">Collection</span></h1>
+      <h1 class="nike relative text-8xl top-11 left-10 text-red-500">NIKE</br><span class=" font-sans text-7xl">Collection</span></h1>
       <p class="relative leading-relaxed text-justify top-20 left-10 w-160">
         TEXT. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt velit nam asperiores 
         id consectetur, veniam sed assumenda repellendus, fugiat voluptatem ipsum ea, perferendis adipisci porro placeat accusantium deserunt 
@@ -1113,30 +1113,64 @@
         </div>
     </div>
     <!--SERVICES-->
-    <div class="services w-7/10 my-0 mx-auto text-center " id="services">
-      <h1>our<span>services</span></h1>
+    <div 
+     class="services 
+     w-7/10 
+     my-0 mx-auto 
+     text-center 
+     pt-20 pb-0 
+     pr-3 pl-0
+     " id="services">
+      <h1 class="text-6xl uppercase">our<span class="ml-4 text-green-500">services</span></h1>
 
-      <div class="servicesCards">
-        <div class="serviceBox">
-          <i class="fa-solid fa-truck-fast"></i>
-          <h3>Fast Deliver</h3>
-          <p>
+      <div 
+       class="servicesCards
+       w-8/10
+       my-0 mx-auto
+       flex
+       items-center
+       justify-between
+       relative
+       top-13
+       ">
+        <div 
+         class="serviceBox
+         
+         ">
+          <i class="fa-solid fa-truck-fast
+          text-6xl
+         text-green-500
+         my-5
+         cursor-pointer
+          "></i>
+          <h3 class="mb-3 text-xl">Fast Deliver</h3>
+          <p class="text-center text-gray-500 mb-15">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, esse?
           </p>
         </div>
 
         <div class="serviceBox">
-          <i class="fa-solid fa-rotate-left"></i>
-          <h3>10 Days replacement</h3>
-          <p>
+          <i class="fa-solid fa-rotate-left
+          text-6xl
+         text-green-500
+         my-5
+         cursor-pointer
+          "></i>
+          <h3 class="mb-3 text-xl">10 Days replacement</h3>
+          <p class="text-center text-gray-500 mb-15">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, esse?
           </p>
         </div>
 
         <div class="serviceBox">
-          <i class="fa-solid fa-headset"></i>
-          <h3>24 x 7 Support</h3>
-          <p>
+          <i class="fa-solid fa-headset
+          text-6xl
+         text-green-500
+         my-5
+         cursor-pointer
+          "></i>
+          <h3 class="mb-3 text-xl">24 x 7 Support</h3>
+          <p class="text-center text-gray-500 mb-15">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, esse?
           </p>
         </div>
@@ -1144,5 +1178,157 @@
       </div>
 
     </div>
+
+    <!--LOGIN FORM-->
+    <div class="loginForm
+     w-full
+     h-screen
+     flex
+     justify-around
+     items-center
+     bg-[url(../assets/bgcover.png)] bg-no-repeat bg-right bg-contain bg-[rgba(255,255,255,0.3)]
+    ">
+      <div class="left w-160 top-">
+        <img src="../assets/bgcover.png" alt="">
+      </div>
+
+      <div class="right relative top-13 -left-15 py-13 px-20">
+        <h1 class="well text-5xl mb-10">Welcome back!</h1>
+
+        <form action="">
+          <p class="mb-1">User Name</p>
+          <div class="user 
+           border-green-500
+           border-2
+           rounded-sm
+           w-90
+           h-10
+           flex
+           ">
+            <i class="fa-solid fa-user relative top-2 left-4 text-green-500"></i>
+            <input type="text" name="user" placeholder="User name"
+            class="relative left-[9%] w-74 outline-none flex text-4">
+          </div>
+
+          <p class="passwordTag mb-0 mt-4 mr-1 ml-0">Password</p>
+          <div class="password
+            border-green-500
+           border-2
+           rounded-sm
+           w-90
+           h-10
+           flex
+           ">
+            <i class="fa-solid fa-lock relative top-2 left-4 text-green-500"></i>
+            <input type="text" name="password" placeholder="Password"
+            class="relative left-[9%] w-74 outline-none flex text-4">
+          </div>
+
+          <p class="forget 
+           relative
+            left-58 
+            mt-2 mb-0 
+            mr-3 ml-0 
+            cursor-pointer">
+            Forget Password?
+          </p>
+
+          <button type="submit" 
+           class="w-90 text-white text-xl py-2 px-5 my-2 
+           bg-[linear-gradient(to_right,_#32CD32,_#228B22)]
+           rounded-sm cursor-pointer">
+           Login
+          </button>
+          <div class="logingIcon flex items-center justify-center mt-2">
+            <a href="#" class="
+             w-8
+             h-8
+             my-0 mx-1
+             rounded-[50%]
+             shadow-sm
+             shadow-black
+             ">
+              <img src="../assets/googleicon.png" alt="google" class="w-8 my-auto mx-auto">
+            </a>
+            <a href="#" class="
+             w-8
+             h-8
+             my-0 mx-1
+             rounded-[50%]
+             shadow-sm
+             shadow-black">
+              <img src="../assets/facebook.png" alt="" class="w-8 my-auto mx-auto">
+            </a>
+            <a href="#" class="
+             w-8
+             h-8
+             my-0 mx-1
+             rounded-[50%]
+             shadow-sm
+             shadow-black">
+              <img src="../assets/twitter.png" alt="" class="w-17 my-auto mx-auto">
+            </a>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+
+    <!--FOOTER-->
+    <footer class="w-full">
+      <div class="footerMain w-full bg-gray-200 flex justify-around">
+        <div class="tag my-3 mx-0">
+          <h1 class="text-2xl my-6 mx-0 text-gren-500">Contact</h1>
+          <a href="#" class="block text-black my-2 mx-0">
+            <i class="fa-solid fa-house py-0 px-3 hover:text-green-500">Lagos,Nigeria</i>
+          </a>
+
+          <a href="#"  class="block text-black my-2 mx-0">
+            <i class="fa-solid fa-phone py-0 px-3 hover:text-green-500">+234 700 532 1091</i>
+          </a>
+
+          <a href="#"  class="block text-black my-2 mx-0">
+            <i class="fa-solid fa-envelope py-0 px-3 hover:text-green-500"></i>sneakers@gmail.com
+          </a>
+        </div>
+        
+        <div class="tag my-3 mx-0">
+          <h1 class="text-2xl my-6 mx-0 text-gren-500">Get Help</h1>
+          <a href="#" class="text-center">FAQ</a>
+          <a href="#" class="text-center">Shipping</a>
+          <a href="#" class="text-center">Returns</a>
+          <a href="#" class="text-center">Payment Options</a>
+        </div>
+
+       <div class="tag my-3 mx-0">
+          <h1 class="text-2xl my-6 mx-0 text-gren-500">Get Help</h1>
+          <a href="#" class="text-center">Nigeria</a>
+          <a href="#" class="text-center">USA</a>
+          <a href="#" class="text-center">China</a>
+          <a href="#" class="text-center">United Kingdom</a>
+        </div>
+
+        <div class="tag my-3 mx-0">
+          <h1 class="text-2xl my-6 mx-0 text-gren-500">Follow Us</h1>
+         <div class="social">
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+         </div>
+        </div>
+
+        <div class="tag my-3 mx-0">
+          <h1 class="text-2xl my-6 mx-0 text-gren-500">Newsletter</h1>
+          <div class="searchBar">
+            <input type="text" placeholder="Your email id here">
+            <button type="submit">Subcribe</button>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
 </body>
 </html>
