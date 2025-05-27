@@ -1,4 +1,27 @@
 @import "tailwindcss";
+
+html::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #c72092 ;
+}
+
+html::-webkit-scrollbar
+{
+  width: 10px;
+  background-color: #c72092 ;
+}
+
+html::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #c72092 ;
+}
+
+
+
 .nike{
     font-family: "pyxidium quick", cursive;
 }
