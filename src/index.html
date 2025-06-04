@@ -12,30 +12,77 @@
   <section class="h-screen w-full max-w-screen bg-[url(../assets/circlegold.png)] bg-contain bg-linear-to-r bg-no-repeat bg-right">
     <nav class="fixed flex items-center justify-around z-50 right-0 left-0 top-0 bg-gray-950 shadow-2xl">
       
-      <div class="logo relative text-white text-4xl my-3 mx-0 font-sans font-bold left-0 cursor-grab p-1">
-        <h1>Sneaker<span class="text-red-500 underline">s</span></h1>
+      <div class="logo relative text-white text-4xl my-3 mx-0 font-sans font-bold -left-8 cursor-grab p-1">
+        <h1>Sneaker<span class="bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent underline decoration-white">s</span></h1>
       </div>
 
-      <ul class="flex ">
-        <li><a href="#" class="text-white hover:text-red-500 transition-colors px-3">Home</a></li>
-        <li><a href="#" class="text-white hover:text-red-500 transition-colors px-3">Products</a></li> 
-        <li><a href="#" class="text-white hover:text-red-500 transition-colors px-3">About</a></li>
-        <li><a href="#" class="text-white hover:text-red-500 transition-colors px-3">Review</a></li>
-        <li><a href="#" class="text-white hover:text-red-500 transition-colors px-3">Services</a></li>
+      <ul class="flex gap-5 ">
+        <li>
+          <a href="#" class="text-white hover:bg-gradient-to-r from-red-500 
+           to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="text-white hover:bg-gradient-to-r from-red-500 
+           to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
+            Products
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="text-white hover:bg-gradient-to-r from-red-500 
+           to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
+            About
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="text-white hover:bg-gradient-to-r from-red-500 
+           to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
+            Review 
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="text-white hover:bg-gradient-to-r from-red-500 
+           to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
+           Services
+          </a>
+        </li>
       </ul>
 
       <div class="icons cursor-pointer mx-0 my-1 text-lg ">
-        <i class="fa-solid fa-heart text-white hover:text-red-500 transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-110 p-1"></i>
-        <i class="fa-solid fa-cart-shopping  text-white hover:text-red-500 hover:animate-bounce transition duration-300 p-1 "></i>
-        <i class="fa-solid fa-user  text-white hover:text-red-500 transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-110 p-1"></i>
+        <i class="fa-solid fa-heart text-white 
+         hover:bg-gradient-to-r from-red-500  to-pink-500 
+         hover:bg-clip-text hover:text-transparent 
+         transition ease-in-out delay-150 duration-300 
+         hover:-translate-y-1 hover:scale-110 p-1">
+        </i>
+
+        <i class="fa-solid fa-cart-shopping text-white 
+         hover:bg-gradient-to-r from-red-500  to-pink-500 
+         hover:bg-clip-text hover:text-transparent  
+         hover:animate-bounce 
+         transition duration-300 p-1 ">
+
+        </i>
+
+        <i class="fa-solid fa-user text-white 
+         hover:bg-gradient-to-r from-red-500  to-pink-500 
+         hover:bg-clip-text hover:text-transparent 
+         transition ease-in-out delay-150 duration-300 
+         hover:-translate-y-1 hover:scale-110 p-1">
+        </i>
       </div>
     </nav>
 
 <div class="main flex  items-center text-black justify-around h-screen" id="home">
   <div class="mainContent flex flex-row items-center justify-around   ">
     <div class="mainText text-left">
-      <h1 class="nike relative text-8xl top-11 font-sans font-medium left-20 text-black">Nike<br /><span class="font-sans font-normal  text-7xl">Collection</span></h1>
-      <p class="relative leading-relaxed text-justify font-serif top-20 left-20 w-160">
+      <h1 class="nike relative text-8xl top-11 font-sans font-medium left-8 text-black">Nike<br /><span class="font-sans font-normal  text-7xl">Collection</span></h1>
+      <p class="relative leading-relaxed text-justify font-serif top-20 left-8 w-160">
         TEXT. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt velit nam asperiores 
         id consectetur, veniam sed assumenda repellendus, fugiat voluptatem ipsum ea, perferendis adipisci porro placeat accusantium deserunt 
         exercitationem excepturi aut laborum? Libero sed tempore consectetur illum nulla asperiores sunt inventore
@@ -44,12 +91,12 @@
     </div>
 
     <div class="mainImage">
-      <img src="../assets/sneaker  pink.png" alt="Sneaker" class="relative w-150 left-10 top-5">
+      <img src="../assets/sneaker  pink.png" alt="Sneaker" class="relative w-150 left-15 top-5">
     </div>
 
   </div>
 
-   <div class="socialIcon absolute flex flex-col -top-4 left-195 my-2 mx-0  translate-100">
+   <div class="socialIcon absolute flex flex-col -top-3 left-[54rem] my-2 mx-0 size-10  translate-100">
     <i class="fa-brands fa-square-facebook  hover:text-red-500 py-1"></i>
     <i class="fa-brands fa-x-twitter  hover:text-red-500 py-1"></i>
     <i class="fa-brands fa-square-instagram  hover:text-red-500 py-1"></i>
@@ -581,7 +628,7 @@
  <!--ABOUT-->
 
   <div class="about w-full h-screen mx-0 py-9 px-0 mb-40" id="about">
-      <h1 class="flex items-center justify-center text-6xl mt-5 uppercase">Web
+      <h1 class="flex items-center justify-center text-6xl mt-5 mb-5 uppercase">Web
        <span 
          class=" ml-4 bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text 
          text-transparent">About
@@ -590,34 +637,34 @@
 
       <div class="aboutMain relative flex top-4/10 left-5/10 transform -translate-x-5/10 -translate-y-5/10  ">
         <div class="aboutImage flex mt-13">
-          <div class="about_smallImage relative flex flex-none flex-col top-4 ml-8">
+          <div class="about_smallImage relative flex flex-col top-2 ml-10">
 
             <img src="../assets/AB1.png" alt="shoes" 
-             class="h-24 block my-1 mx-0 py-1 px-1 cursor-pointer border-2 border-black 
-             rounded shadow opacity-80 hover:opacity-100 duration-100" onclick="functio(this)
+             class=" h-28 w-28 block my-1 mx-0 py-1 px-1 cursor-pointer border-2 border-black 
+             rounded-xl shadow opacity-80 hover:opacity-100 duration-100" onclick="functio(this)
             ">
             <img src="../assets/AB2.png" alt="shoes" 
-             class="h-24 block my-1 mx-0 py-1 px-1 cursor-pointer border-2 border-black 
-             rounded shadow opacity-80 hover:opacity-100 duration-100" onclick="functio(this)
+             class="h-28 w-28 block my-1 mx-0 py-1 px-1 cursor-pointer border-2 border-black 
+             rounded-xl shadow opacity-80 hover:opacity-100 duration-100" onclick="functio(this)
             ">
             <img src="../assets/AB3.png" alt="shoes" 
-             class="h-24 block my-1 mx-0 py-1 px-1 cursor-pointer border-2 border-black 
-             rounded shadow opacity-80 hover:opacity-100 duration-100" onclick="functio(this)
+             class="h-28 w-28 block my-1 mx-0 py-1 px-1 cursor-pointer border-2 border-black 
+             rounded-xl shadow opacity-80 hover:opacity-100 duration-100" onclick="functio(this)
             ">
             <img src="../assets/AB4.png" alt="shoes" 
-             class="h-24 block my-1 mx-0 py-1 px-1 cursor-pointer border-2 border-black 
-             rounded shadow opacity-80 hover:opacity-100 duration-100" onclick="functio(this)
+             class="h-28 w-28 block my-1 mx-0 py-1 px-1 cursor-pointer border-2 border-black 
+             rounded-xl shadow opacity-80 hover:opacity-100 duration-100" onclick="functio(this)
             ">
           </div>
 
-          <div class="imageContainer flex p-2">
-            <img src="../assets/AB1.png" alt="" id="imagebox" class="border-3 border-black
-             rounded-3xl h-108 bg-gray-50 p-8 shadow-lg shadow-gray-300 object-contain 
+          <div class="imageContainer flex p-2 ml-6">
+            <img src="../assets/AB1.png" alt="" id="imagebox" class="border-4 border-black
+             rounded-3xl h-120 w-120 bg-gray-50 p-6 shadow-sm object-contain
             ">
           </div>
         </div>
-        <div class="aboutText mt-17 ml-9 mr-8">
-          <p class="text-gray-400 leading-normal w-150 text-justify py-6 px-8 border-3 border-black rounded-3xl shadow-lg">
+        <div class="aboutText mt-25 ml-9 mr-8">
+          <p class="text-gray-600 leading-normal bg-gray-50 w-150 text-justify py-6 px-8 border-2 border-black rounded-3xl shadow-lg">
             text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi doloribus, quo assumenda
             ipsam blanditiis impedit tempora rerum voluptas sed voluptatibus debitis eligendi architecto laborum
             ex asperiores facilis quisquam delectus, tenetur aperiam consequatur iste eaque, ad nesciunt perspiciat
@@ -632,9 +679,13 @@
         </div>
       
       </div>
-      <a href="" class="aboutBtn relative text-black top-1/10 left-5/10 transform 
-      -translate-x-5/10 -translate-y-5/10 py-2 px-6 border-2 border-black shadow-lg shadow-gray-400 
-      duration-[0.5s] hover:border-transparent hover:text-white hover:bg-black">Shop Now</a>
+      <div class="aboutbtn mt-2">
+        <a href="" class="aboutBtn relative text-black top-1/10 left-5/10 transform
+         -translate-x-5/10 -translate-y-5/10 py-2 px-6 border-2 border-black shadow-lg shadow-gray-400
+         duration-[0.5s] hover:border-transparent hover:text-white hover:bg-black rounded-xl">
+         Shop Now  
+        </a>
+      </div>
       <script>
        function functio(small){
             var full = document.getElementById("imagebox")
