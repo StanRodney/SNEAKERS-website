@@ -11,79 +11,102 @@
 </head>
 <body class="box-border bg-grey-200 m-0 p-0 font-sans overflow-x-hidden">
   <section class="h-screen w-full max-w-screen bg-[url(../assets/circlegold.png)] bg-contain bg-linear-to-r bg-no-repeat bg-right">
-    <nav class="fixed flex items-center justify-around z-50 right-0 left-0 top-0 bg-gray-950 shadow-2xl">
+    <nav class="fixed flex items-center justify-between w-full px-6 z-50  bg-gray-950 shadow-2xl">
       
-      <div class="logo relative text-white text-4xl my-3 mx-0 font-sans font-bold -left-8 cursor-grab p-1">
+      <div class="logo text-white text-4xl my-3 font-sans font-bold p-1 ">
         <h1>Sneaker<span class="bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent underline decoration-white">s</span></h1>
       </div>
 
-      <ul class="flex gap-5 ">
-        <li>
-          <a href="#" class="text-white hover:bg-gradient-to-r from-red-500 
-           to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
-            Home
-          </a>
-        </li>
+      <button
+          id="menu"
+          class="lg:hidden focus:outline-none text-white hover:text-pink-500 transition-colors"
+          aria-expanded="false"
+          aria-label="Open menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"vscode
+            stroke="currentColor"
+            class="h-8 w-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
 
-        <li>
-          <a href="#" class="text-white hover:bg-gradient-to-r from-red-500 
-           to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
-            Products
-          </a>
-        </li>
+      
+        <div role="menubar"
+          class="hidden flex-col gap-4 absolute z-40 right-0 left-0 top-16 bg-gray-950 shadow-xl text-center 
+          p-6 text-lg items-center lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between lg:bg-gray-950">
+          
+            <a href="#"  role="menuitem"
+             class="text-white hover:bg-gradient-to-r from-red-500 outline-none
+             to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
+              Home
+            </a>
+          
+            <a href="#" role="menuitem"
+             class="text-white hover:bg-gradient-to-r from-red-500 outline-none
+             to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
+              Products
+            </a>
+          
+            <a href="#" role="menuitem"
+             class="text-white hover:bg-gradient-to-r from-red-500 outline-none
+             to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
+              About
+            </a>
+          
+            <a href="#" role="menuitem"
+             class="text-white hover:bg-gradient-to-r from-red-500 outline-none
+             to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
+              Review
+            </a>
+          
+            <a href="#" role="menuitem"
+             class="text-white hover:bg-gradient-to-r from-red-500 outline-none
+             to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
+             Services
+            </a>
+        </div>
 
-        <li>
-          <a href="#" class="text-white hover:bg-gradient-to-r from-red-500 
-           to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
-            About
-          </a>
-        </li>
+        <div role="menubar"
+       class="icons cursor-pointer mx-0 my-1 text-lg hidden lg:flex gap-3 ">
+          <i role="menuitem"
+           class="fa-solid fa-heart text-white
+           hover:bg-gradient-to-r from-red-500  to-pink-500
+           hover:bg-clip-text hover:text-transparent
+           transition ease-in-out delay-150 duration-300
+           hover:-translate-y-1 hover:scale-110 p-1">
+          </i>
+          <i role="menuitem"
+           class="fa-solid fa-cart-shopping text-white
+           hover:bg-gradient-to-r from-red-500  to-pink-500
+           hover:bg-clip-text hover:text-transparent
+           hover:animate-bounce
+           transition duration-300 p-1 ">
+          </i>
+          <i role="menuitem"
+           class="fa-solid fa-user text-white
+           hover:bg-gradient-to-r from-red-500  to-pink-500
+           hover:bg-clip-text hover:text-transparent
+           transition ease-in-out delay-150 duration-300
+           hover:-translate-y-1 hover:scale-110 p-1">
+          </i>
+        </div>
 
-        <li>
-          <a href="#" class="text-white hover:bg-gradient-to-r from-red-500 
-           to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
-            Review 
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="text-white hover:bg-gradient-to-r from-red-500 
-           to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
-           Services
-          </a>
-        </li>
-      </ul>
-
-      <div class="icons cursor-pointer mx-0 my-1 text-lg ">
-        <i class="fa-solid fa-heart text-white 
-         hover:bg-gradient-to-r from-red-500  to-pink-500 
-         hover:bg-clip-text hover:text-transparent 
-         transition ease-in-out delay-150 duration-300 
-         hover:-translate-y-1 hover:scale-110 p-1">
-        </i>
-
-        <i class="fa-solid fa-cart-shopping text-white 
-         hover:bg-gradient-to-r from-red-500  to-pink-500 
-         hover:bg-clip-text hover:text-transparent  
-         hover:animate-bounce 
-         transition duration-300 p-1 ">
-
-        </i>
-
-        <i class="fa-solid fa-user text-white 
-         hover:bg-gradient-to-r from-red-500  to-pink-500 
-         hover:bg-clip-text hover:text-transparent 
-         transition ease-in-out delay-150 duration-300 
-         hover:-translate-y-1 hover:scale-110 p-1">
-        </i>
-      </div>
     </nav>
 
 <div class="main flex  items-center text-black justify-around h-screen" id="home">
-  <div class="mainContent flex flex-row items-center justify-around   ">
-    <div class="mainText text-left">
-      <h1 class="nike relative text-8xl top-11 font-sans font-medium left-8 text-black">Nike<br /><span class="font-sans font-normal  text-7xl">Collection</span></h1>
-      <p class="relative leading-relaxed text-justify font-serif top-20 left-8 w-160">
+  <div class="mainContent flex flex-col-reverse lg:flex-row items-center justify-center gap-4 lg:gap-16 h-full px-4 ">
+    <div class="mainText text-center lg:text-left max-w-xl">
+      <h1 class="nike text-5xl sm:text-6xl lg:text-8xl font-sans font-medium text-black leading-tight">Nike<br /><span class="font-sans font-normal text-4xl sm:text-6xl lg:text-7xl">Collection</span></h1>
+      <p class="mt-6 text-sm sm:text-base lg:text-lg leading-relaxed font-serif hidden sm:block">
         TEXT. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt velit nam asperiores 
         id consectetur, veniam sed assumenda repellendus, fugiat voluptatem ipsum ea, perferendis adipisci porro placeat accusantium deserunt 
         exercitationem excepturi aut laborum? Libero sed tempore consectetur illum nulla asperiores sunt inventore
@@ -91,8 +114,8 @@
       </p>
     </div>
 
-    <div class="mainImage">
-      <img src="../assets/sneaker  pink.png" alt="Sneaker" class="relative w-150 left-15 top-5">
+    <div class="mainImage relative w-full max-w-md mx-auto lg:max-w-[500px]">
+      <img src="../assets/sneaker  pink.png" alt="Sneaker" class="w-full h-auto object-contain">
     </div>
 
   </div>
@@ -1340,4 +1363,15 @@
     </footer>
 
 </body>
+<script>  
+    const navBtn = document.querySelector('#menu');
+    const menuBar = document.querySelector('[role="menubar"]');
+
+    navBtn.addEventListener('click', () => {
+      const isExpanded = JSON.parse(navBtn.getAttribute('aria-expanded'));
+      navBtn.setAttribute('aria-expanded', !isExpanded);
+      menuBar.classList.toggle('hidden');
+      menuBar.classList.toggle('flex');
+    });
+  </script>
 </html>
