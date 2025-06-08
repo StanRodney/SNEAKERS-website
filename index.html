@@ -105,8 +105,10 @@
 <div class="main flex  items-center text-black justify-around h-screen" id="home">
   <div class="mainContent flex flex-col-reverse lg:flex-row items-center justify-center gap-4 lg:gap-16 h-full px-4 ">
     <div class="mainText text-center lg:text-left max-w-xl">
-      <h1 class="nike text-5xl sm:text-6xl lg:text-8xl font-sans font-medium text-black leading-tight">Nike<br /><span class="font-sans font-normal text-4xl sm:text-6xl lg:text-7xl">Collection</span></h1>
-      <p class="mt-6 text-sm sm:text-base lg:text-lg leading-relaxed font-serif hidden sm:block">
+      <h1 class="nike font-sans text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-medium text-black text-left leading-tight px-4 sm:px-6 md:px-8">Nike<br />
+        <span class="block font-normal text-[2rem] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Collection</span>
+      </h1>
+      <p class="hidden md:block leading-relaxed text-justify font-serif md:mt-6 md:ml-4 md:max-w-xl text-sm md:text-base text-black">
         TEXT. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt velit nam asperiores 
         id consectetur, veniam sed assumenda repellendus, fugiat voluptatem ipsum ea, perferendis adipisci porro placeat accusantium deserunt 
         exercitationem excepturi aut laborum? Libero sed tempore consectetur illum nulla asperiores sunt inventore
@@ -116,20 +118,20 @@
 
     <div class="mainImage relative flex justify-center items-center w-full lg:w-[600px]">
       <img src="../assets/circlegold.png" alt="circle" 
-       class="w-[500px] md:w-[400px] lg:w-[500px] xl:w-[600px]">
-      <img src="../assets/sneaker  pink.png" alt="Sneaker" class="absolute w-[400px] md:w-[330px] lg:w-[450px] xl:w-[500px] ">
+       class="w-[500px] md:w-[500px] lg:w-[500px] xl:w-[600px]">
+      <img src="../assets/sneaker  pink.png" alt="Sneaker" class="absolute w-[400px] md:w-[400px] lg:w-[450px] xl:w-[500px] ">
     </div>
 
   </div>
 
-   <div class="socialIcon absolute flex flex-col -top-3 left-[54rem] my-2 mx-0 size-10  translate-100">
+   <div class="socialIcon  absolute hidden lg:flex  lg:left-[95%] lg:flex-col lg:top-[50%] gap-2">
     <i class="fa-brands fa-square-facebook  hover:text-red-500 py-1"></i>
     <i class="fa-brands fa-x-twitter  hover:text-red-500 py-1"></i>
     <i class="fa-brands fa-square-instagram  hover:text-red-500 py-1"></i>
     <i class="fa-brands fa-linkedin  hover:text-red-500 py-1"></i>
   </div>
 
-  <div class="group button absolute left-20 py-2 px-4 rounded-2xl bg-black bottom-1  ">
+  <div class="group button relative mt-6 lg:absolute lg:bottom-6 lg:left-1/2 lg:-translate-x-1/2 py-2 px-4 rounded-2xl bg-black w-fit">
     <a href="" class="text-white transition-normal group-hover:transform group-hover:translate-x-1 ">Shop Now</a>
     <i class="fa-solid fa-chevron-right text-white ml-1 transition-normal group-hover:transform group-hover:translate-x-1"></i>
   </div>
