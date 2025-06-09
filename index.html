@@ -102,10 +102,12 @@
 
     </nav>
 
-<div class="main flex  items-center text-black justify-around h-screen" id="home">
+<div class="main flex  items-center text-black justify-around min-h-screen lg:h-screen" id="home">
   <div class="mainContent flex flex-col-reverse lg:flex-row items-center justify-center gap-4 lg:gap-16 h-full px-4 ">
-    <div class="mainText text-center lg:text-left max-w-xl">
-      <h1 class="nike font-sans text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-medium text-black text-left leading-tight px-4 sm:px-6 md:px-8">Nike<br />
+    <div class="mainText text-center lg:text-left max-w-xl px-4 sm:px-6 md:px-7">
+      <h1 class="nike font-sans text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-medium 
+       text-black text-left leading-tight px-4 sm:px-6 md:px-8">
+        Nike<br />
         <span class="block font-normal text-[2rem] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Collection</span>
       </h1>
       <p class="hidden md:block leading-relaxed text-justify font-serif md:mt-6 md:ml-4 md:max-w-xl text-sm md:text-base text-black">
@@ -114,12 +116,17 @@
         exercitationem excepturi aut laborum? Libero sed tempore consectetur illum nulla asperiores sunt inventore
         ipsam, dicta, omnis nostrum cumque esse in nam voluptate.
       </p>
+
+      <div class="group button mt-6 inline-flex items-center py-2 px-4 rounded-2xl bg-black w-fit">
+  <a href="#" class="text-white transition-normal group-hover:transform">Shop Now</a>
+  <i class="fa-solid fa-chevron-right text-white ml-1  transition-normal group-hover:transform group-hover:translate-x-1"></i>
+</div>
     </div>
 
-    <div class="mainImage relative flex justify-center items-center w-full lg:w-[600px]">
+    <div class="mainImage relative flex justify-center items-center w-full max-w-[500px] mx-auto lg:max-w-[600px]">
       <img src="../assets/circlegold.png" alt="circle" 
-       class="w-[500px] md:w-[500px] lg:w-[500px] xl:w-[600px]">
-      <img src="../assets/sneaker  pink.png" alt="Sneaker" class="absolute w-[400px] md:w-[400px] lg:w-[450px] xl:w-[500px] ">
+       class="w-[500px] md:w-[400px] lg:w-[500px] xl:w-[600px]">
+      <img src="../assets/sneaker  pink.png" alt="Sneaker" class="absolute w-[400px] md:w-[330px] lg:w-[450px] xl:w-[500px]">
     </div>
 
   </div>
@@ -131,10 +138,6 @@
     <i class="fa-brands fa-linkedin  hover:text-red-500 py-1"></i>
   </div>
 
-  <div class="group button relative mt-6 lg:absolute lg:bottom-6 lg:left-1/2 lg:-translate-x-1/2 py-2 px-4 rounded-2xl bg-black w-fit">
-    <a href="" class="text-white transition-normal group-hover:transform group-hover:translate-x-1 ">Shop Now</a>
-    <i class="fa-solid fa-chevron-right text-white ml-1 transition-normal group-hover:transform group-hover:translate-x-1"></i>
-  </div>
 
 </div>
 
