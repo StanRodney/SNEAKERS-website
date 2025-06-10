@@ -10,138 +10,132 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="box-border bg-grey-200 m-0 p-0 font-sans overflow-x-hidden">
-  <section class="h-screen w-full max-w-screen  ">
-    <nav class="fixed flex items-center justify-between w-full px-6 z-50  bg-gray-950 shadow-2xl">
-      
-      <div class="logo text-white text-4xl my-3 font-sans font-bold p-1 ">
-        <h1>Sneaker<span class="bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent underline decoration-white">s</span></h1>
-      </div>
-
-      <button
-          id="menu"
-          class="lg:hidden focus:outline-none text-white hover:text-pink-500 transition-colors"
-          aria-expanded="false"
-          aria-label="Open menu"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"vscode
-            stroke="currentColor"
-            class="h-8 w-8"
+  <div class="max-w-screen overflow-x-hidden mx-auto">
+    <section class="h-screen w-full max-w-screen  ">
+      <nav class="fixed flex items-center justify-between w-full px-6 z-50  bg-gray-950 shadow-2xl ">
+    
+        <div class="logo text-white text-4xl my-3 font-sans font-bold p-1 ">
+          <h1>Sneaker<span class="bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent underline decoration-white">s</span></h1>
+        </div>
+        <button
+            id="menu"
+            class="lg:hidden focus:outline-none text-white hover:text-pink-500 transition-colors"
+            aria-expanded="false"
+            aria-label="Open menu"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
-         </button>
-
-      
-        <div role="menubar"
-          class="hidden flex-col gap-4 absolute z-40 right-0 left-0 top-16 bg-gray-950 shadow-xl text-center 
-          p-6 text-lg items-center lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between lg:bg-gray-950">
-          
-            <a href="#"  role="menuitem"
-             class="text-white hover:bg-gradient-to-r from-red-500 outline-none
-             to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
-              Home
-            </a>
-          
-            <a href="#" role="menuitem"
-             class="text-white hover:bg-gradient-to-r from-red-500 outline-none
-             to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
-              Products
-            </a>
-          
-            <a href="#" role="menuitem"
-             class="text-white hover:bg-gradient-to-r from-red-500 outline-none
-             to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
-              About
-            </a>
-          
-            <a href="#" role="menuitem"
-             class="text-white hover:bg-gradient-to-r from-red-500 outline-none
-             to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
-              Review
-            </a>
-          
-            <a href="#" role="menuitem"
-             class="text-white hover:bg-gradient-to-r from-red-500 outline-none
-             to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
-             Services
-            </a>
-        </div>
-
-        <div role="menubar"
-       class="icons cursor-pointer mx-0 my-1 text-lg hidden lg:flex gap-3 ">
-          <i role="menuitem"
-           class="fa-solid fa-heart text-white
-           hover:bg-gradient-to-r from-red-500  to-pink-500
-           hover:bg-clip-text hover:text-transparent
-           transition ease-in-out delay-150 duration-300
-           hover:-translate-y-1 hover:scale-110 p-1">
-          </i>
-          <i role="menuitem"
-           class="fa-solid fa-cart-shopping text-white
-           hover:bg-gradient-to-r from-red-500  to-pink-500
-           hover:bg-clip-text hover:text-transparent
-           hover:animate-bounce
-           transition duration-300 p-1 ">
-          </i>
-          <i role="menuitem"
-           class="fa-solid fa-user text-white
-           hover:bg-gradient-to-r from-red-500  to-pink-500
-           hover:bg-clip-text hover:text-transparent
-           transition ease-in-out delay-150 duration-300
-           hover:-translate-y-1 hover:scale-110 p-1">
-          </i>
-        </div>
-
-    </nav>
-
-<div class="main flex  items-center text-black justify-around min-h-screen lg:h-screen" id="home">
-  <div class="mainContent flex flex-col-reverse lg:flex-row items-center justify-center gap-4 lg:gap-16 h-full px-4 ">
-    <div class="mainText text-center lg:text-left max-w-xl px-4 sm:px-6 md:px-7">
-      <h1 class="nike font-sans text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-medium 
-       text-black text-left leading-tight px-4 sm:px-6 md:px-8">
-        Nike<br />
-        <span class="block font-normal text-[2rem] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Collection</span>
-      </h1>
-      <p class="hidden md:block leading-relaxed text-justify font-serif md:mt-6 md:ml-4 md:max-w-xl text-sm md:text-base text-black">
-        TEXT. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt velit nam asperiores 
-        id consectetur, veniam sed assumenda repellendus, fugiat voluptatem ipsum ea, perferendis adipisci porro placeat accusantium deserunt 
-        exercitationem excepturi aut laborum? Libero sed tempore consectetur illum nulla asperiores sunt inventore
-        ipsam, dicta, omnis nostrum cumque esse in nam voluptate.
-      </p>
-
-      <div class="group button mt-6 inline-flex items-center py-2 px-4 rounded-2xl bg-black w-fit">
-  <a href="#" class="text-white transition-normal group-hover:transform">Shop Now</a>
-  <i class="fa-solid fa-chevron-right text-white ml-1  transition-normal group-hover:transform group-hover:translate-x-1"></i>
-</div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"vscode
+              stroke="currentColor"
+              class="h-8 w-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+           </button>
+    
+          <div role="menubar"
+            class="hidden flex-col gap-4 absolute z-40 right-0 left-0 top-16 bg-gray-950 shadow-xl text-center
+            p-6 text-lg items-center lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between lg:bg-gray-950">
+    
+              <a href="#"  role="menuitem"
+               class="text-white hover:bg-gradient-to-r from-red-500 outline-none
+               to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
+                Home
+              </a>
+    
+              <a href="#" role="menuitem"
+               class="text-white hover:bg-gradient-to-r from-red-500 outline-none
+               to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
+                Products
+              </a>
+    
+              <a href="#" role="menuitem"
+               class="text-white hover:bg-gradient-to-r from-red-500 outline-none
+               to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
+                About
+              </a>
+    
+              <a href="#" role="menuitem"
+               class="text-white hover:bg-gradient-to-r from-red-500 outline-none
+               to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
+                Review
+              </a>
+    
+              <a href="#" role="menuitem"
+               class="text-white hover:bg-gradient-to-r from-red-500 outline-none
+               to-pink-500 hover:bg-clip-text hover:text-transparent px-3">
+               Services
+              </a>
+          </div>
+          <div role="menubar"
+         class="icons cursor-pointer mx-0 my-1 text-lg hidden lg:flex gap-3 ">
+            <i role="menuitem"
+             class="fa-solid fa-heart text-white
+             hover:bg-gradient-to-r from-red-500  to-pink-500
+             hover:bg-clip-text hover:text-transparent
+             transition ease-in-out delay-150 duration-300
+             hover:-translate-y-1 hover:scale-110 p-1">
+            </i>
+            <i role="menuitem"
+             class="fa-solid fa-cart-shopping text-white
+             hover:bg-gradient-to-r from-red-500  to-pink-500
+             hover:bg-clip-text hover:text-transparent
+             hover:animate-bounce
+             transition duration-300 p-1 ">
+            </i>
+            <i role="menuitem"
+             class="fa-solid fa-user text-white
+             hover:bg-gradient-to-r from-red-500  to-pink-500
+             hover:bg-clip-text hover:text-transparent
+             transition ease-in-out delay-150 duration-300
+             hover:-translate-y-1 hover:scale-110 p-1">
+            </i>
+          </div>
+      </nav>
+    
+    <div class="main flex  items-center text-black justify-around min-h-screen lg:h-screen" id="home">
+    <div class="mainContent flex flex-col-reverse lg:flex-row items-center justify-center gap-4 lg:gap-16 h-full px-4 ">
+      <div class="mainText text-center lg:text-left max-w-xl px-4 sm:px-6 md:px-7">
+        <h1 class="nike font-sans text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-medium
+         text-black text-left leading-tight px-4 sm:px-6 md:px-8">
+          Nike<br />
+          <span class="block font-normal text-[2rem] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Collection</span>
+        </h1>
+        <p class="hidden md:block leading-relaxed text-justify font-serif md:mt-6 md:ml-4 md:max-w-xl text-sm md:text-base text-black">
+          TEXT. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt velit nam asperiores
+          id consectetur, veniam sed assumenda repellendus, fugiat voluptatem ipsum ea, perferendis adipisci porro placeat accusantium deserunt
+          exercitationem excepturi aut laborum? Libero sed tempore consectetur illum nulla asperiores sunt inventore
+          ipsam, dicta, omnis nostrum cumque esse in nam voluptate.
+        </p>
+        <div class="group button mt-6 inline-flex items-center py-2 px-4 rounded-2xl bg-black w-fit">
+    <a href="#" class="text-white transition-normal group-hover:transform">Shop Now</a>
+    <i class="fa-solid fa-chevron-right text-white ml-1  transition-normal group-hover:transform group-hover:translate-x-1"></i>
     </div>
-
-    <div class="mainImage relative flex justify-center items-center w-full max-w-[500px] mx-auto lg:max-w-[600px]">
-      <img src="../assets/circlegold.png" alt="circle" 
-       class="w-[500px] md:w-[400px] lg:w-[500px] xl:w-[600px]">
-      <img src="../assets/sneaker  pink.png" alt="Sneaker" class="absolute w-[400px] md:w-[330px] lg:w-[450px] xl:w-[500px]">
+      </div>
+      <div class="mainImage relative flex justify-center items-center w-full max-w-[500px] mx-auto lg:max-w-[600px]">
+        <img src="../assets/circlegold.png" alt="circle"
+         class="w-[500px] md:w-[400px] lg:w-[500px] xl:w-[600px]">
+        <img src="../assets/sneaker  pink.png" alt="Sneaker" class="absolute w-[400px] md:w-[330px] lg:w-[450px] xl:w-[500px]">
+      </div>
     </div>
-
+     <div class="socialIcon  absolute hidden lg:flex  lg:left-[95%] lg:flex-col lg:top-[50%] gap-2">
+      <i class="fa-brands fa-square-facebook  hover:text-red-500 py-1"></i>
+      <i class="fa-brands fa-x-twitter  hover:text-red-500 py-1"></i>
+      <i class="fa-brands fa-square-instagram  hover:text-red-500 py-1"></i>
+      <i class="fa-brands fa-linkedin  hover:text-red-500 py-1"></i>
+    </div>
+    
+    
+    </div>
+    
+    </section>
   </div>
-
-   <div class="socialIcon  absolute hidden lg:flex  lg:left-[95%] lg:flex-col lg:top-[50%] gap-2">
-    <i class="fa-brands fa-square-facebook  hover:text-red-500 py-1"></i>
-    <i class="fa-brands fa-x-twitter  hover:text-red-500 py-1"></i>
-    <i class="fa-brands fa-square-instagram  hover:text-red-500 py-1"></i>
-    <i class="fa-brands fa-linkedin  hover:text-red-500 py-1"></i>
-  </div>
-
-
-</div>
-
-</section>
  
  
  
