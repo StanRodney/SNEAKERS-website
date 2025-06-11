@@ -39,9 +39,13 @@
             </svg>
            </button>
         
-          <div role="menubar"
-            class="hidden flex-col gap-4 absolute z-40 right-0 left-0 top-16 bg-gray-950 shadow-xl text-center
-            p-6 text-lg items-center lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between lg:bg-gray-950">
+          <div id="mobileMenu" role="menubar"
+            class="max-h-0 overflow-hidden opacity-0 transition-all 
+            duration-500 ease-in-out flex-col gap-4 fixed top-16 left-0 
+            right-0 bg-gray-950 shadow-xl text-center
+            p-6 text-lg items-center lg:flex lg:flex-row 
+            lg:static lg:max-h-full lg:opacity-100 lg:overflow-visible 
+            lg:transition-none lg:shadow-none lg:justify-between lg:bg-gray-950 hidden">
         
               <a href="#"  role="menuitem"
                class="text-white hover:bg-gradient-to-r from-red-500 outline-none
@@ -73,23 +77,23 @@
                Services
               </a>
           </div>
-          <div role="menubar"
+          <div
          class="icons cursor-pointer mx-0 my-1 text-lg hidden lg:flex gap-3 ">
-            <i role="menuitem"
+            <i 
              class="fa-solid fa-heart text-white
              hover:bg-gradient-to-r from-red-500  to-pink-500
              hover:bg-clip-text hover:text-transparent
              transition ease-in-out delay-150 duration-300
              hover:-translate-y-1 hover:scale-110 p-1">
             </i>
-            <i role="menuitem"
+            <i 
              class="fa-solid fa-cart-shopping text-white
              hover:bg-gradient-to-r from-red-500  to-pink-500
              hover:bg-clip-text hover:text-transparent
              hover:animate-bounce
              transition duration-300 p-1 ">
             </i>
-            <i role="menuitem"
+            <i
              class="fa-solid fa-user text-white
              hover:bg-gradient-to-r from-red-500  to-pink-500
              hover:bg-clip-text hover:text-transparent
@@ -162,7 +166,7 @@
         <div class="group card w-full h-130 ring-2 ring-black rounded-lg py-3 px-5 text-center shadow-xl/20 bg-white ">
              <!--HOVER EFFECT-->
           <div class="smallCard absolute
-           flex flex-col my-3 mx-0 transform
+           flex flex-col my-3 mx-2 transform
            translate-x-[-20px] transition duration-[1s]
             hover:translate-x-[2px] cursor-pointer
            opacity-0 group-hover:opacity-100  hover:duration-[1s]
@@ -224,7 +228,7 @@
   
         <div class="group card w-full h-130 ring-2 ring-black rounded-lg py-3 px-5 text-center shadow-xl/20 bg-white ">
   
-          <div class="smallCard absolute flex flex-col my-3 mx-0
+          <div class="smallCard absolute flex flex-col my-3 mx-2
           transform translate-x-[-20px] transition duration-[1s]
            hover:translate-x-[2px] cursor-pointer
            opacity-0 group-hover:opacity-100  hover:duration-[1s]
@@ -1371,15 +1375,32 @@
     </footer>
 
 </body>
-<script>  
-    const navBtn = document.querySelector('#menu');
-    const menuBar = document.querySelector('[role="menubar"]');
+<script>
+  const navBtn = document.querySelector('#menu');
+  const menuBar = document.querySelector('#mobileMenu');
 
-    navBtn.addEventListener('click', () => {
-      const isExpanded = JSON.parse(navBtn.getAttribute('aria-expanded'));
-      navBtn.setAttribute('aria-expanded', !isExpanded);
-      menuBar.classList.toggle('hidden');
-      menuBar.classList.toggle('flex');
-    });
-  </script>
+  navBtn.addEventListener('click', () => {
+    const isExpanded = JSON.parse(navBtn.getAttribute('aria-expanded'));
+    navBtn.setAttribute('aria-expanded', !isExpanded);
+
+    if (!isExpanded) {
+      
+      menuBar.classList.remove('hidden');
+      menuBar.classList.add('flex');
+      requestAnimationFrame(() => {
+        menuBar.classList.remove('max-h-0', 'opacity-0');
+        menuBar.classList.add('max-h-[500px]', 'opacity-100'); 
+      });
+    } else {
+      
+      menuBar.classList.remove('max-h-[500px]', 'opacity-100');
+      menuBar.classList.add('max-h-0', 'opacity-0');
+
+      setTimeout(() => {
+        menuBar.classList.remove('flex');
+        menuBar.classList.add('hidden');
+      }, 500); 
+    }
+  });
+</script>
 </html>
