@@ -105,7 +105,7 @@
 
     </nav>
 
-<header class="h-screen w-full max-w-screen  ">
+<header class="h-screen w-full max-w-screen md:mb-30 ">
 <div class="main flex  items-center text-black justify-around min-h-screen lg:h-screen" id="home">
   <div class="mainContent flex flex-col-reverse lg:flex-row items-center justify-center gap-4 lg:gap-16 h-full px-4 ">
     <div class="mainText text-center lg:text-left max-w-xl px-4 sm:px-6 md:px-7">
@@ -153,7 +153,7 @@
  <!--PRODUCTS-->
 <main class="px-4 sm:px-6 lg:px-12">
   
-   <div class="product w-full max-w-screen py-6 px-0" id="products">
+   <div class="product w-full max-w-full py-6 px-0" id="products">
       <h1 
        class="flex items-center justify-center uppercase mb-12 text-4xl sm:text-5xl lg:text-6xl text-center
        bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent">
@@ -161,9 +161,9 @@
       </h1>
   
   
-      <div class="box grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-11/12 mx-auto">
+      <div class="box grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 w-11/12 mx-auto">
   
-        <div class="group card h-65 w-1/2  lg:w-full lg:h-130 ring-2 ring-black rounded-lg lg:py-3 px-5 text-center bg-white ">
+        <div class="group card relative w-full h-[520px] ring-1 ring-black rounded-lg py-3 px-4 text-center bg-white ">
              <!--HOVER EFFECT-->
           <div class="smallCard absolute
            flex flex-col my-3 mx-2 transform
@@ -172,18 +172,16 @@
            opacity-0 group-hover:opacity-100  hover:duration-[1s]
   
            ">
-            <i class="fa-solid fa-heart w-7 h-7
-             lg:w-10
-             lg:h-10
+            <i class="fa-solid fa-heart
+             w-10
+             h-10
              rounded-[5px]
-             text-lg
-             lg:my-1
-             mx-1
-             lg:mx-0
-             pt-1
-             lg:pt-2
+             text-xl
+             my-1
+             mx-0
+             pt-2
              leading-10
-             border-2
+             border-1
              border-black
              transition
              duration-[0.2s]
@@ -197,7 +195,7 @@
              mx-0
              pt-2
              leading-10
-             border-2
+             border-1
              border-black
              transition
              duration-[0.2s]
@@ -205,30 +203,30 @@
           </div>
   
           <div class="image flex items-center justify-center">
-            <img src="../assets/sneaker3.png" alt="sneaker" class="w-32 my-0 lg:w-48 lg:my-4 lg:mx-0 ">
+            <img src="../assets/sneaker3.png" alt="sneaker" class="w-48 my-4 mx-0 ">
           </div>
   
           <div class="productText">
-            <h2 class="text-xl lg:text-2xl lg:mt-4">NIKE</h2>
+            <h2 class=" text-2xl mt-4">NIKE</h2>
   
-            <p class="leading-none text-sm text-gray-300 lg:leading-[18px] lg:my-2 lg:mx-0 ">
+            <p class=" text-sm text-gray-400 leading-[18px] my-2 mx-0 ">
              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             </p>
-            <h3 class="lg:my-2  font-semibold">$100.99</h3>
-            <div class="productStars lg:mb-4 cursor-pointer text-shadow-black text-[10px]">
+            <h3 class="my-2 mx-0 font-semibold">$100.99</h3>
+            <div class="productStars mb-4 cursor-pointer  text-[10px]">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
             </div>
-            <a href="" class="btn lg:py-2 lg:px-5 bg-black text-white">Add to cart</a>
+            <a href="" class="btn py-2 px-5 bg-black text-white">Add to cart</a>
           </div>
   
         </div>
   
   
-        <div class="group card w-full h-130 ring-2 ring-black rounded-lg py-3 px-5 text-center  bg-white ">
+        <div class="group card relative w-full h-[520px] ring-1 ring-black rounded-lg py-3 px-5 text-center  bg-white ">
   
           <div class="smallCard absolute flex flex-col my-3 mx-2
           transform translate-x-[-20px] transition duration-[1s]
@@ -244,7 +242,7 @@
              mx-0
              pt-2
              leading-10
-             border-2
+             border-1
              border-black
              transition
              duration-[0.2s]
@@ -258,7 +256,7 @@
              mx-0
              pt-2
              leading-10
-             border-2
+             border-1
              border-black
              transition
              duration-[0.2s]
@@ -272,11 +270,11 @@
           <div class="productText">
             <h2 class="text-2xl mt-4">NIKE</h2>
   
-            <p class="text-gray-300 leading-[18px] my-2 mx-0">
+            <p class="text-gray-400 leading-[18px] my-2 mx-0">
              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, saepe?
             </p>
             <h3 class="my-2 mx-0 font-semibold">$100.99</h3>
-            <div class="productStars mb-4 cursor-pointer text-shadow-black text-[10px]">
+            <div class="productStars mb-4 cursor-pointer text-[10px]">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -289,7 +287,7 @@
         </div>
   
   
-        <div class="group card w-full h-130 ring-2 ring-black rounded-lg py-3 px-5 text-center  bg-white ">
+        <div class="group card relative  w-full h-[520px] ring-1 ring-black rounded-lg py-3 px-5 text-center  bg-white ">
   
           <div class="smallCard absolute flex flex-col my-3 mx-0
            transform translate-x-[-20px] transition duration-[1s]
@@ -302,10 +300,10 @@
              rounded-[5px]
              text-xl
              my-1
-             mx-0
+             mx-2
              pt-2
              leading-10
-             border-2
+             border-1
              border-black
              transition
              duration-[0.2s]
@@ -316,10 +314,10 @@
              rounded-[5px]
              text-xl
              my-1
-             mx-0
+             mx-2
              pt-2
              leading-10
-             border-2
+             border-1
              border-black
              transition
              duration-[0.2s]
@@ -337,7 +335,7 @@
              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, saepe?
             </p>
             <h3 class="my-2 mx-0 font-semibold">$100.99</h3>
-            <div class="productStars  mb-4 cursor-pointer text-shadow-black text-[10px]">
+            <div class="productStars  mb-4 cursor-pointer text-[10px]">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -350,7 +348,7 @@
         </div>
   
   
-        <div class="group card  w-full h-130 ring-2 ring-black rounded-lg py-3 px-5 text-center  bg-white">
+        <div class="group card relative  w-full h-[520px] ring-1 ring-black rounded-lg py-3 px-5 text-center  bg-white">
   
           <div class="smallCard absolute flex flex-col my-3 mx-0
           transform translate-x-[-20px] transition duration-[1s]
@@ -363,10 +361,10 @@
              rounded-[5px]
              text-xl
              my-1
-             mx-0
+             mx-2
              pt-2
              leading-10
-             border-2
+             border-1
              border-black
              transition
              duration-[0.2s]
@@ -377,10 +375,10 @@
              rounded-[5px]
              text-xl
              my-1
-             mx-0
+             mx-2
              pt-2
              leading-10
-             border-2
+             border-1
              border-black
              transition
              duration-[0.2s]
@@ -398,7 +396,7 @@
              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, saepe?
             </p>
             <h3 class="my-2 mx-0 font-semibold">$100.99</h3>
-            <div class="productStars mb-4 cursor-pointer text-shadow-black text-[10px]">
+            <div class="productStars mb-4 cursor-pointer text-[10px]">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -412,7 +410,7 @@
   
   
   
-        <div class="group card  w-full h-130 ring-2 ring-black rounded-lg py-3 px-5 text-center  bg-white ">
+        <div class="group card relative  w-full h-[520px] ring-1 ring-black rounded-lg py-3 px-5 text-center  bg-white ">
   
           <div class="smallCard absolute flex flex-col my-3 mx-0
           transform translate-x-[-20px] transition duration-[1s]
@@ -425,10 +423,10 @@
              rounded-[5px]
              text-xl
              my-1
-             mx-0
+             mx-2
              pt-2
              leading-10
-             border-2
+             border-1
              border-black
              transition
              duration-[0.2s]
@@ -439,10 +437,10 @@
              rounded-[5px]
              text-xl
              my-1
-             mx-0
+             mx-2
              pt-2
              leading-10
-             border-2
+             border-1
              border-black
              transition
              duration-[0.2s]
@@ -460,7 +458,7 @@
              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, saepe?
             </p>
             <h3 class="my-2 mx-0 font-semibold">$100.99</h3>
-            <div class="productStars mb-4 cursor-pointer text-shadow-black text-[10px]">
+            <div class="productStars mb-4 cursor-pointer text-[10px]">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -474,7 +472,7 @@
   
   
   
-        <div class="group card  w-full h-130 ring-2 ring-black rounded-lg py-3 px-5 text-center  bg-white ">
+        <div class="group card relative  w-full h-[520px] ring-1 ring-black rounded-lg py-3 px-5 text-center  bg-white ">
   
           <div class="smallCard absolute flex flex-col my-3 mx-0
           transform translate-x-[-20px] transition duration-[1s]
@@ -487,10 +485,10 @@
              rounded-[5px]
              text-xl
              my-1
-             mx-0
+             mx-2
              pt-2
              leading-10
-             border-2
+             border-1
              border-black
              transition
              duration-[0.2s]
@@ -501,10 +499,10 @@
              rounded-[5px]
              text-xl
              my-1
-             mx-0
+             mx-2
              pt-2
              leading-10
-             border-2
+             border-1
              border-black
              transition
              duration-[0.2s]
@@ -522,7 +520,7 @@
              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, saepe?
             </p>
             <h3 class="my-2 mx-0 font-semibold">$100.99</h3>
-            <div class="productStars mb-4 cursor-pointer text-shadow-black text-[10px]">
+            <div class="productStars mb-4 cursor-pointer text-[10px]">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -536,7 +534,7 @@
   
   
   
-        <div class="group card w-full h-130 ring-2 ring-black rounded-lg py-3 px-5 text-center  bg-white ">
+        <div class="group card relative w-full h-[520px] ring-1 ring-black rounded-lg py-3 px-5 text-center  bg-white ">
   
           <div class="smallCard absolute flex flex-col my-3 mx-0
           transform translate-x-[-20px] transition duration-[1s]
@@ -549,10 +547,10 @@
              rounded-[5px]
              text-xl
              my-1
-             mx-0
+             mx-2
              pt-2
              leading-10
-             border-2
+             border-1
              border-black
              transition
              duration-[0.2s]
@@ -563,10 +561,10 @@
              rounded-[5px]
              text-xl
              my-1
-             mx-0
+             mx-2
              pt-2
              leading-10
-             border-2
+             border-1
              border-black
              transition
              duration-[0.2s]
@@ -584,7 +582,7 @@
              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, saepe?
             </p>
             <h3 class="my-2 mx-0 font-semibold">$100.99</h3>
-            <div class="productStars mb-4 cursor-pointer text-shadow-black text-[10px]">
+            <div class="productStars mb-4 cursor-pointer text-[10px]">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -597,7 +595,7 @@
         </div>
   
   
-        <div class="group card  w-full h-130 ring-2 ring-black rounded-lg py-3 px-5 text-center  bg-white">
+        <div class="group card relative  w-full h-[520px] ring-1 ring-black rounded-lg py-3 px-5 text-center  bg-white">
   
           <div class="smallCard absolute flex flex-col my-3 mx-0
           transform translate-x-[-20px] transition duration-[1s]
@@ -610,10 +608,10 @@
              rounded-[5px]
              text-xl
              my-1
-             mx-0
+             mx-2
              pt-2
              leading-10
-             border-2
+             border-1
              border-black
              transition
              duration-[0.2s]
@@ -624,10 +622,10 @@
              rounded-[5px]
              text-xl
              my-1
-             mx-0
+             mx-2
              pt-2
              leading-10
-             border-2
+             border-1
              border-black
              transition
              duration-[0.2s]
@@ -645,7 +643,7 @@
              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, saepe?
             </p>
             <h3 class="my-2 mx-0 font-semibold">$100.99</h3>
-            <div class="productStars mb-4 cursor-pointer text-shadow-black text-[10px]">
+            <div class="productStars mb-4 cursor-pointer text-[10px]">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -665,72 +663,65 @@
 
  <!--ABOUT-->
 
-  <div class="about w-full h-screen mx-0 py-9 px-0 mb-40" id="about">
-      <h1 class="flex items-center justify-center text-6xl mt-5 mb-5 uppercase">Web
-       <span 
-         class=" ml-4 bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text 
-         text-transparent">About
-       </span>
-      </h1>
+  <div class="about w-full min-h-screen mx-0 py-9 px-0 mb-52" id="about">
+  <h1 class="flex items-center justify-center text-4xl md:text-5xl lg:text-6xl mt-5 mb-5 uppercase">Web
+    <span class="ml-4 bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent">
+      About
+    </span>
+  </h1>
 
-      <div class="aboutMain relative flex top-4/10 left-5/10 transform -translate-x-5/10 -translate-y-5/10  ">
-        <div class="aboutImage flex mt-13">
-          <div class="about_smallImage relative flex flex-col top-2 ml-10">
-
-            <img src="../assets/AB1.png" alt="shoes" 
-             class=" h-28 w-28 block my-1 mx-0 py-1 px-1 cursor-pointer border-2 border-black 
-             rounded-xl shadow opacity-80 hover:opacity-100 duration-100" onclick="functio(this)
-            ">
-            <img src="../assets/AB2.png" alt="shoes" 
-             class="h-28 w-28 block my-1 mx-0 py-1 px-1 cursor-pointer border-2 border-black 
-             rounded-xl shadow opacity-80 hover:opacity-100 duration-100" onclick="functio(this)
-            ">
-            <img src="../assets/AB3.png" alt="shoes" 
-             class="h-28 w-28 block my-1 mx-0 py-1 px-1 cursor-pointer border-2 border-black 
-             rounded-xl shadow opacity-80 hover:opacity-100 duration-100" onclick="functio(this)
-            ">
-            <img src="../assets/AB4.png" alt="shoes" 
-             class="h-28 w-28 block my-1 mx-0 py-1 px-1 cursor-pointer border-2 border-black 
-             rounded-xl shadow opacity-80 hover:opacity-100 duration-100" onclick="functio(this)
-            ">
-          </div>
-
-          <div class="imageContainer flex p-2 ml-6">
-            <img src="../assets/AB1.png" alt="" id="imagebox" class="border-4 border-black
-             rounded-3xl h-120 w-120 bg-gray-50 p-6 shadow-sm object-contain
-            ">
-          </div>
-        </div>
-        <div class="aboutText mt-25 ml-9 mr-8">
-          <p class="text-gray-600 leading-normal bg-gray-50 w-150 text-justify py-6 px-8 border-2 border-black rounded-3xl shadow-lg">
-            text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi doloribus, quo assumenda
-            ipsam blanditiis impedit tempora rerum voluptas sed voluptatibus debitis eligendi architecto laborum
-            ex asperiores facilis quisquam delectus, tenetur aperiam consequatur iste eaque, ad nesciunt perspiciat
-            is? Necessitatibus tempore, omnis modi aliquid quidem maiores recusandae nemo quod molestiae a nisi err
-            or quam quae numquam cumque! Repudiandae et fugiat quisquam, nulla modi ab inventore quo at praesentium
-            numquam laboriosam soluta accusamus, nemo incidunt officia ad. Fuga cupiditate perspiciatis eius, est
-            sapiente voluptatum distinctio consequuntur officiis, modi deleniti voluptate. Perferendis cupiditate
-            ea modi atque corrupti animi error ab quisquam. Hic optio necessitatibus fugit eaque, laborum totam
-            impedit odio perferendis. Possimus temporibus modi nobis sit eum et enim? Explicabo labore voluptate
-            adipisci corporis doloribus deleniti laboriosam, quisquam at laudantium nihil omnis nesciunt quasi
-          </p>
-        </div>
-      
+  <div class="aboutMain flex flex-col lg:flex-row items-center justify-center gap-10 px-4">
+    <div class="aboutImage flex flex-col-reverse lg:flex-row w-full lg:w-1/2 px-4 gap-4">
+      <div class="about_smallImage flex flex-row sm:mx-auto md:mx-auto lg:flex-col gap-3 mt-4 lg:mt-0 lg:mr-6 px-4 sm:px-6">
+        
+        <img src="../assets/AB1.png" alt="shoes"
+          class="h-28 w-28 block cursor-pointer border-1 border-black rounded-xl shadow opacity-80 hover:opacity-100 duration-100"
+          onclick="functio(this)">
+        <img src="../assets/AB2.png" alt="shoes"
+          class="h-28 w-28 block cursor-pointer border-1 border-black rounded-xl shadow opacity-80 hover:opacity-100 duration-100"
+          onclick="functio(this)">
+        <img src="../assets/AB3.png" alt="shoes"
+          class="h-28 w-28 block cursor-pointer border-1 border-black rounded-xl shadow opacity-80 hover:opacity-100 duration-100"
+          onclick="functio(this)">
+        <img src="../assets/AB4.png" alt="shoes"
+          class="h-28 w-28 block cursor-pointer border-1 border-black rounded-xl shadow opacity-80 hover:opacity-100 duration-100"
+          onclick="functio(this)">
       </div>
-      <div class="aboutbtn mt-2">
-        <a href="" class="aboutBtn relative text-black top-1/10 left-5/10 transform
-         -translate-x-5/10 -translate-y-5/10 py-2 px-6 border-2 border-black shadow-lg shadow-gray-400
-         duration-[0.5s] hover:border-transparent hover:text-white hover:bg-black rounded-xl">
-         Shop Now  
-        </a>
+
+      <div class="imageContainer flex justify-center p-2">
+        <img src="../assets/AB1.png" alt="" id="imagebox" class="border-1 border-black rounded-3xl h-120 w-120 p-6 object-contain">
       </div>
-      <script>
-       function functio(small){
-            var full = document.getElementById("imagebox")
-              full.src = small.src
-            }
-      </script>
     </div>
+
+    <div class ="aboutText hidden md:block w-full lg:w-1/2 max-w-4xl mt-10 lg:mt-0 px-4">
+      <p class="text-gray-600 leading-normal text-justify py-6 px-8 border-1 border-black rounded-3xl">
+        text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi doloribus, quo assumenda ipsam blanditiis
+        impedit tempora rerum voluptas sed voluptatibus debitis eligendi architecto laborum ex asperiores facilis
+        quisquam delectus, tenetur aperiam consequatur iste eaque, ad nesciunt perspiciatis? Necessitatibus tempore,
+        omnis modi aliquid quidem maiores recusandae nemo quod molestiae a nisi error quam quae numquam cumque!
+        Repudiandae et fugiat quisquam, nulla modi ab inventore quo at praesentium numquam laboriosam soluta accusamus,
+        nemo incidunt officia ad. Fuga cupiditate perspiciatis eius, est sapiente voluptatum distinctio consequuntur
+        officiis, modi deleniti voluptate. Perferendis cupiditate ea modi atque corrupti animi error ab quisquam. Hic
+        optio necessitatibus fugit eaque, laborum totam impedit odio perferendis. Possimus temporibus modi nobis sit eum
+        et enim? Explicabo labore voluptate adipisci corporis doloribus deleniti laboriosam, quisquam at laudantium nihil
+        omnis nesciunt quasi
+      </p>
+    </div>
+  </div>
+
+  <div class="aboutbtn mt-6 flex justify-center">
+    <a href="#" class="text-black py-2 px-6 border-2 border-black shadow-lg shadow-gray-400 duration-300 hover:border-transparent hover:text-white hover:bg-black rounded-xl">
+      Shop Now
+    </a>
+  </div>
+
+  <script>
+    function functio(small) {
+      var full = document.getElementById("imagebox")
+      full.src = small.src
+    }
+  </script>
+</div>
 
 
     <!--REVIEW-->
