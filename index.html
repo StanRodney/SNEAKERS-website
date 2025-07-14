@@ -663,7 +663,7 @@
 
  <!--ABOUT-->
 
-  <div class="about w-full min-h-screen mx-0 py-9 px-0 mb-52" id="about">
+  <div class="about w-full min-h-screen mx-0 py-9 px-0 mb-30" id="about">
   <h1 class="flex items-center justify-center text-4xl md:text-5xl lg:text-6xl mt-5 mb-5 uppercase">Web
     <span class="ml-4 bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent">
       About
@@ -710,7 +710,8 @@
   </div>
 
   <div class="aboutbtn mt-6 flex justify-center">
-    <a href="#" class="text-black py-2 px-6 border-2 border-black shadow-lg shadow-gray-400 duration-300 hover:border-transparent hover:text-white hover:bg-black rounded-xl">
+    <a href="#" class=" py-2 px-6 border-1 bg-black text-white border-black lg:duration-300
+     lg:hover:border-transparent lg:text-black lg:bg-white lg:hover:text-white lg:hover:bg-black rounded-xl">
       Shop Now
     </a>
   </div>
@@ -741,8 +742,8 @@
           px-6
           rounded-xl
           m-4
-          shadow-lg
-          shadow-black
+          shadow-sm
+          shadow-pink-500
           ">
             <div
             class="cardTop
@@ -820,8 +821,8 @@
           px-6
           rounded-xl
           m-4
-          shadow-lg
-          shadow-black
+          shadow-sm
+          shadow-red-500
           ">
             <div
             class="cardTop
@@ -900,8 +901,8 @@
           px-6
           rounded-xl
           m-4
-          shadow-lg
-          shadow-black
+          shadow-sm
+          shadow-pink-500
           ">
             <div
             class="cardTop
@@ -981,8 +982,8 @@
           px-6
           rounded-xl
           m-4
-          shadow-lg
-          shadow-black
+          shadow-sm
+          shadow-red-500
           ">
             <div
             class="cardTop
@@ -1063,7 +1064,7 @@
      pt-20 
      px-4
      " id="services">
-      <h1 class="text-6xl uppercase">our<span 
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase">our<span 
         class="ml-4 bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent">services</span>
       </h1>
 
@@ -1084,12 +1085,12 @@
          ">
           <i class="fa-solid fa-truck-fast
           text-6xl
-         text-black
+        bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent
          my-5
          cursor-pointer
           "></i>
           <h3 class="mb-3 text-xl">Fast Delivery</h3>
-          <p class="text-center text-gray-500 mb-15">
+          <p class="text-center text-gray-500 mb-10">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, esse?
           </p>
         </div>
@@ -1097,12 +1098,12 @@
         <div class="serviceBox w-full md:w-1/3 text-center px-4">
           <i class="fa-solid fa-rotate-left
           text-6xl
-         text-black
+        bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent
          my-5
          cursor-pointer
           "></i>
           <h3 class="mb-3 text-xl">10 Days replacement</h3>
-          <p class="text-center text-gray-500 mb-15">
+          <p class="text-center text-gray-500 mb-10">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, esse?
           </p>
         </div>
@@ -1110,12 +1111,12 @@
         <div class="serviceBox w-full md:w-1/3 text-center px-4">
           <i class="fa-solid fa-headset
           text-6xl
-         text-black
+        bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent
          my-5
          cursor-pointer
           "></i>
           <h3 class="mb-3 text-xl">24 x 7 Support</h3>
-          <p class="text-center text-gray-500 mb-15">
+          <p class="text-center text-gray-500 mb-10">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, esse?
           </p>
         </div>
@@ -1139,7 +1140,7 @@
         <img src="../assets/welcome.jpg" alt="sneakers" class="w-full h-full object-cover ">
       </div>
 
-      <div class="right w-full lg:w-1/2 max-w-[600px] px-6 md:px-10 py-10">
+      <div class="right w-full max-w-[500px] px-4 sm:px-6 md:px-10 py-10 mx-auto">
         <h1 class="well text-5xl mb-10 ">Welcome back!</h1>
 
         <form action="">
@@ -1148,13 +1149,13 @@
            border-red-300
            border-2
            rounded-xl
-           w-85
+           w-full
            h-10
            flex
            ">
-            <i class="fa-solid fa-user relative top-2 left-4 text-red-400"></i>
+            <i class="fa-solid fa-user relative top-2 pr-2 left-4 text-red-400"></i>
             <input type="text" name="user" placeholder="User name"
-            class="relative left-[9%] w-74 outline-none flex text-4">
+            class="ml-4 flex-grow outline-none text-sm"> 
           </div>
 
           <p class="passwordTag mb-0 mt-4 text mr-1 ml-0">Password</p>
@@ -1162,32 +1163,33 @@
             border-red-300
            border-2
            rounded-xl
-           w-85
+           w-full
            h-10
            flex
            ">
-            <i class="fa-solid fa-lock relative top-2 left-4 text-red-400"></i>
+            <i class="fa-solid fa-lock relative top-2 left-4 pr-2 text-red-400"></i>
             <input type="text" name="password" placeholder="Password"
-            class="relative left-[9%] w-74 outline-none flex text-4 ">
+            class="ml-4 flex-grow outline-none text-sm">
           </div>
 
           <p class="forget 
            relative
-            left-54
-            mt-2 mb-0 
-            mr-3 ml-0 
+            left-2/3
+            mt-2 
+            mr-3 mb-3
+            text-sm
             cursor-pointer
           ">
             Forget Password?
           </p>
 
           <button type="submit" 
-           class="w-85 text-white text-xl py-2 px-5 my-2 rounded-tr-full rounded-bl-full 
+           class="w-full text-white text-xl py-2 px-5 my-2 rounded-tr-full rounded-bl-full 
            bg-gradient-to-r from-red-500 to-pink-500
             cursor-pointer">
            Login
           </button>
-          <div class="logingIcon flex items-center justify-center gap-4 mt-6">
+          <div class="logingIcon flex items-center justify-center mt-6">
             <a href="#" class="
              w-8
              h-8
@@ -1343,8 +1345,8 @@
          </div>
         </div>
 
-        <div class="tag my-1 mx-0">
-          <h1 class="text-2xl my-6 mx-0 text-yellow-100">Newsletter</h1>
+        <div class="tag my-1 mx-0 mb-8">
+          <h1 class="text-2xl my-6 text-yellow-100">Newsletter</h1>
           
           <div class="searchBar w-58 h-8 bg-gradient-to-r from-red-400 to-pink-200 rounded-2xl">
             <input type="text" placeholder="Your email id here" 
